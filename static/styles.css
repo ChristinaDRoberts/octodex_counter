@@ -2,6 +2,7 @@
 img{
     border: 3px solid lightgray;
 
+
 }
 
 .octocat{
@@ -28,12 +29,6 @@ img{
  }
 
 
-.octocat>a>img{
-    height: 300px;
-    height:100px;
-    width:100px;
-}
-
 
 
 a{
@@ -53,14 +48,15 @@ a{
     display: inline-block;
     height:30px;
     width: 30px;
-    padding: 0%;
+    padding-top: 7%;
     border: none;
 
 }
 
 
- .image.number{
+ .image-number{
      display: inline-block;
+
  }
 
  .image-footer{
@@ -79,5 +75,20 @@ span{
 
 ul{
     padding: 0px;
+    list-style:none;
 
+}
+
+.octocat>a::after {
+    content: " ";
+    height: 0;
+    width: 0;
+    border-top: solid 10px lightgrey;
+    border-left: solid 10px transparent;
+    border-right: solid 10px transparent;
+
+
+    position: absolute;
+      top: 100%;
+      right: 1%;
 }
